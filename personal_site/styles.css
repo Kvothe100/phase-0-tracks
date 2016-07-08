@@ -1,0 +1,9 @@
+body {
+	background: red;
+}
+.header {
+	font-family: Arial;
+	padding-left: 70px;
+	border-style: dotted;
+	border-color: white;
+}
