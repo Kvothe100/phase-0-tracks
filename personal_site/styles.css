@@ -7,3 +7,18 @@ body {
 	border-style: dotted;
 	border-color: white;
 }
+a:visited {
+	color: green;
+}
+#undefeated 
+{margin-left: 70px;
+margin-right: 100px;}
+table {
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(arslogo.jpg);
+}
+@media (max-width: 450px){
+	body{background-color: yellow}
+}
+}
