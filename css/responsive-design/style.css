@@ -9,8 +9,8 @@ cite  {
   margin-top: 10px;
 }
 #external-links {
-  float: left;
-  width: 200px;
+ float: left;
+  width: 20%;
 }
 
 #external-links ul {
@@ -18,7 +18,7 @@ cite  {
   padding-left: 0px;
 }
 .main {
-  width: 756px;
+  width: 80%;
   display: inline-block;
   vertical-align: right
 }
@@ -40,6 +40,14 @@ figcaption {
   text-align: right;
 }
 body {
-  width: 960px;
+  max-width: 960px;
+}
+@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
+}
+@media (max-width: 600px) {
+  html { background: green; }
 }
 
