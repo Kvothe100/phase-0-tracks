@@ -4,16 +4,25 @@ blockquote {
   margin-left: 0px;
 }
 
-cite {
+cite  {
   display: block;
   margin-top: 10px;
+}
+#external-links {
+  float: left;
+  width: 200px;
 }
 
 #external-links ul {
   list-style-type: none;
   padding-left: 0px;
 }
-
+.main {
+  width: 756px;
+  display: inline-block;
+  vertical-align: right
+}
+}
 /* you're welcome to edit the
 image, figure, and figcaption CSS if you'd like, 
 but it's optional! */
@@ -30,3 +39,7 @@ figcaption {
   font-style: italic;
   text-align: right;
 }
+body {
+  width: 960px;
+}
+
