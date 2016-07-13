@@ -18,7 +18,26 @@ Exiting:
 	When you have reached your floor wait for the doors to open
 	Exit elevator
 	
-
+				
+	
+				Getting in your car!
+Aquire your car keys
+	-If car keys are not to be found
+		-Grab bus pass. 
+Keys are found
+	-Now find your car
+	-If car is not found
+		-Back to the bus
+Car is found
+	-Unlock car with remote or physically with key
+Open door
+	-Use door handle to open the driver door
+Get in car
+	-Avoid knocking head on car and sit in driver seat 
+Strap in with seatbelt
+Put keys in ignition
+	-Press on the brakes and turn key to start the car
+Drive away!
 
 
 				
