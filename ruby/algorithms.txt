@@ -1,0 +1,24 @@
+				Elevator
+
+Decide what direction to take elevator:
+	Up: When desired floor number is greater than current floor
+	Down: When desired floor number is less than current floor
+	If current floor is desired floor: No action needed, lil bot.
+Elevator arrives:
+	Wait for doors to open and anyone getting out has done so
+	Board the elevator
+Floor selection:
+	Once inside elevator, observe control panel on wall next to doors
+	Some of the buttons on the panel will have numbers on them
+	Look for your desired floors number and press
+	Elevator will begin moving
+Exiting:
+	Other people/robots may have picked a different floors
+	Observe the current floor indicator on the panel or above the doors
+	When you have reached your floor wait for the doors to open
+	Exit elevator
+	
+
+
+
+				
