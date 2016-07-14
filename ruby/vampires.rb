@@ -1,3 +1,6 @@
+puts "How many employees will be processed?"
+emp_number = gets.to_i
+
 puts "What is your name?"
 name = gets.chomp
 
@@ -23,3 +26,5 @@ elsif name == "Drake Cula" || name == "Tu Fang"
 		puts "Definitely a vampire."
 else puts "Results inconclusive."
 end
+
+print "Actually, never mind! What do these questions have to do with anything? Let's all be freinds here"
