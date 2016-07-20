@@ -16,30 +16,30 @@ decor = {
 	:kids => num_kids,
 	:theme => decor_theme
 }
-p decor
+p decor #prints the data for the user and designer to read
 
-puts "What answer you like to update?"
+puts "What answer you like to update?" #Ask if the user would like to change anything
 update= gets.chomp
-if update= "name"
+if update== "name"
 	puts "What is your new name?"
 		new_name=gets.chomp
 	decor[:user_name] = new_name
-elsif update= "age"
+elsif update== "age"
 	puts "What is the new age?"
 		new_age= gets.to_i
 	decor[:user_age] = new_age
-elsif update = "num_kids"
+elsif update == "num_kids"
 	puts "What is the new number of kids?"
 		new_kids= gets.to_i
 	decor[:kids] = new_kids
-elsif update ="decor_theme"
+elsif update =="decor_theme"
 	puts "What is your new theme?"
 		new_theme= gets.chomp
 	decor[:theme] = new_theme
 else
 	puts "Thanks! Have a great day"
 end
+p decor #prints updated hash
 
-#print the hash for the designer and user to see
 
-#double check with the user to see if they want to update the data
+
