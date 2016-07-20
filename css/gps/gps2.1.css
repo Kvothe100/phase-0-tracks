@@ -1,0 +1,63 @@
+body {
+  width: 100%;
+  background-image: url("https://octodex.github.com/images/baracktocat.jpg");
+}
+h1 {
+  font-family: "Lucida Console";
+}
+h2 {
+  font-family: "Lucida Console";
+  font-size: 140%;
+}
+header {
+  background-color: #C3272B;
+  margin: 2% 10% 2% 10%;
+  padding: 1% 1% 1% 1%;
+  border-radius: 2%;
+  text-align: center;
+  font-family: 'Trebuchet-MS',Helvectica, sans-serif;
+  font-size: 110%
+}
+.column-1 {
+  background-color: #19B5FE;
+  margin: 2% 0% 2% 10%;
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  padding: 1% 1% 1% 1%;
+  border-radius: 2%
+  text-align: center;
+}
+.column-2 {
+  background-color: #F4E03F;
+  margin: 2% 10% 2% 2%;
+  display: inline-block;
+  vertical-align: top;
+  width: 28%;
+  padding: 1% 1% 1% 1%;
+  border-radius: 2%;
+  text-align: center;
+}
+footer {
+  background-color: #C3272B;
+  margin: 2% 10% 2% 10%;
+  padding: 1% 1% 1% 1%;
+  border-radius: 10%;
+  text-align: center;
+  font-family: 'Trebuchet-MS',Helvectica, sans-serif;
+  font-size: 110%
+}
+img {
+  display: inline-block;
+  vertical-align: top;
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+  border: 5%;
+  border-style: solid;
+  border-color: white;
+}
+article,p,ul {
+  font-family: 'Trebuchet-MS',Helvectica, sans-serif;
+  font-size: 90%
+}
