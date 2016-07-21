@@ -53,4 +53,7 @@ highway = {
 		]
 	}
 }
-highway
+highway[:car_5][:passengers].push("Chris Dunn")
+highway[:car_3][:driver_info][1] = 13
+highway[:car_4][:passengers].reverse
+highway[:car_1][:driver]
