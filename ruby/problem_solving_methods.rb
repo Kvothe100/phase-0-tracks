@@ -1,3 +1,12 @@
+def find(array, num)
+  array.each_with_index do |element,index|
+    return index if (element == num)  # return from find
+  end
+  nil  # If we didn't find the element, return nil
+end
+
+
+
 
 def fib(n)
 	array = [0,1]
@@ -9,6 +18,8 @@ end
 
 
 puts fib(10)
+
+
 
 #define our sorting code method
 def bubble_sort(array)
