@@ -62,3 +62,23 @@ def add_item(item, quantity, list)
 
 	list
 end
+#make a method to remove an item from the list
+#use the delete_if method
+def remove_item(item, list)
+	list.delete_if {|list_item| list_item == item.to_sym}
+	#print the output
+	list
+end
+
+
+#update the list with a new item
+#check to make sure it already exists
+
+def update(item, quantity, list)
+	if list.include? item.to_sym
+		list[item.to_sym] = quantity
+	else 
+		add_item(item, quantity, list)
+	end
+	list
+end
