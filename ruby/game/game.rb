@@ -16,7 +16,7 @@ class Game
 	def secret(word)
 		@secret_word= word
 		word.length.times {word_guessed << '_'}
-		@how_many_guesses = words.length * 1.5
+		@how_many_guesses = words.length * 3
 	end
 	#time to start letting them guess letters!
 	#I'll need to use the handy .include?
@@ -28,3 +28,19 @@ class Game
 		end
 	end
 end
+
+#make an instance
+hangperson= Game.new
+#input from user for the secret_word
+puts "What is the secret word you wish?"
+hangperson.secret(gets.chomp)
+
+#start your guessing!!
+until hangperson.guessed_letters.length == hangperson.how_many_guesses || !hangperson.word_guessed.include?('_')
+	puts "Guess a letter"
+	guess= gets.chomp
+	if guess.is_a?(string) && guess.length ==1
+		if hangperson.guessed_letters.include? guess
+			puts "Hey bub, you already guessed that letter!"
+		elsif hangperson.guess(guess)
+			indexes 
