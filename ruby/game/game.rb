@@ -43,4 +43,35 @@ until hangperson.guessed_letters.length == hangperson.how_many_guesses || !hangp
 		if hangperson.guessed_letters.include? guess
 			puts "Hey bub, you already guessed that letter!"
 		elsif hangperson.guess(guess)
-			indexes 
+			already_guessed = []
+			i=0
+			hangperson.secret_word.each_char
+				do |letter|
+				if letter == guess
+				already_guessed << i
+				end
+				i+=1
+			end 
+			already_guessed.each do |location|
+				hangperson.word_guessed[location] = guess
+			end
+			hangperson.guessed_letters << guess
+			# now we inform them they are sooooo awesome
+			puts "You are soooo awesome at guessing letters. Well done, chap!"
+			p hangperson.word_guessed.join(' ')
+			#inform them them they didn't guess a letter in the word....
+		else
+			hangperson.guessed_letters << guess
+			puts "So sorry, that letter is not in our secret word..."
+			puts hangperson.word.guessed.include? ('_')
+		end
+		#now to catch any errors in our input from the user
+	else
+		puts "That was an invalid input. Please just put in one letter. Thanks!"
+	end
+	#deliver the bad news about our person
+	if hangperson.word_guessed.include? '_'
+		puts "I'm so sorry. Our person has been.....hung."
+	#now the good news! 
+	else
+		puts "YOU DID IT! Our person has been saved.........for now :)"
