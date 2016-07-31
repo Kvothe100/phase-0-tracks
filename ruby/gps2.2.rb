@@ -99,3 +99,24 @@ p add_item("dog treats", 4, updated_list)
 p remove_item("juice", updated_list)
 p update("carrots", 7, updated_list)
 print(updated_list)
+
+#I went back and reworked pretty much the entire thing. My pair and I were headed 
+#in the right direction when I had to go to work. I only reworked it because it
+#made more sense to me when I was working on my own.
+
+#pseudocoding: I found the given pseudocode a bit confusing. So did my pair.
+#We got rid of pretty much all of it and our guide helped us add some hints in.
+
+#Hashes were good for this challenge because of the key/value aspect of a hash
+#Meaning we could easily apply a quantity to our items
+#array were then easy create from our hash
+
+#A method returns whatever you ask it to with your argument. As long as it works
+
+#What you pass into methods as arguments depends on what you are trying to 
+#accomplish with the method. It could be: strings, integers, booleans, etc.
+
+#We demonstrated how to pass info between methods with our challenge.
+#You call the desired method in your current method. Passing the info along
+
+#I think this challenge was good for me. It helped strengthen my hash/array knowledge
