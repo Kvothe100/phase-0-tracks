@@ -82,3 +82,20 @@ def update(item, quantity, list)
 	end
 	list
 end
+
+#make a method that prints the updated list
+def print(list)
+
+	string = "Here is my shopping list: \n"
+	list.each do |item, quantity|
+		string = string + "#{item}: #{quantity} \n"
+	end
+	puts string
+end
+
+
+updated_list = grocery_list("carrots oranges juice cheeses")
+p add_item("dog treats", 4, updated_list)
+p remove_item("juice", updated_list)
+p update("carrots", 7, updated_list)
+print(updated_list)
