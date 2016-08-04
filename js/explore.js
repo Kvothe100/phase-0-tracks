@@ -3,3 +3,7 @@
 //reverse the letters and print the result
 //store the result in a variable
 //print the variable inside of a string
+function reverse(s) {
+	return s.split('').reverse().join('');
+}
+
