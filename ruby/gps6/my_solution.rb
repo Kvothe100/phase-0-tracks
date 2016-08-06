@@ -9,6 +9,11 @@
 #to aquire the file containing the statement to use an outside resource
 #to use in the file
 #
+#population density is number of people per square mile as of 2012
+#this data is updated every year with estimates from a 10 year census
+
+
+
 require_relative 'state_data'
 
 class VirusPredictor
@@ -88,6 +93,9 @@ california.virus_effects
 alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
 alaska.virus_effects
 
-
+STATE_DATA.each do |state, population|
+  state = VirusPredictor.new(state, STATE_DATA[state][:population_density],STATE_DATA[state][:population])
+  state.virus_effects
+end
 #=======================================================================
 # Reflection Section
