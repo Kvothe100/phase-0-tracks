@@ -5,7 +5,9 @@
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
-#
+#require is a built in method and require_relative allows you
+#to aquire the file containing the statement to use an outside resource
+#to use in the file
 #
 require_relative 'state_data'
 
