@@ -52,6 +52,10 @@ class VirusPredictor
   end
 #depending upon population density this method calculates spead of virus spreading
 #print the speed
+
+#We couldn't figure out how to refactor the speed_of_spread method
+#We are sure there is a way we just couldn't quite get there
+#any insight would be awesome!!
   def speed_of_spread #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
