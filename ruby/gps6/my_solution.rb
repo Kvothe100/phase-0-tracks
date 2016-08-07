@@ -1,7 +1,7 @@
 
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [ with: Logan ].
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
@@ -104,3 +104,16 @@ end
 
 #=======================================================================
 # Reflection Section
+#The difference between the two hash syntaxes are that one hash contains 
+#the other hash inside of it. Making it the "hashy hash"
+
+#require is a built in method and require_relative allows you
+#to aquire the file containing the statement to use an outside resource
+#to use in the file
+
+#you can iterate through a hash using .each, .map, .sort, .keys, etc
+
+#When we refactored virus_effects we realized we could get rid of the variables
+#because they were repetitive
+
+#I solidified my refactoring during this challenge
