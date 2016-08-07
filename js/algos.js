@@ -6,9 +6,15 @@
 //the others
 
 //return the longest string
-var array = ["Start me up", "Beast of Burden", "Can't you hear me knocking?", "Let it bleed"];
-function longestString() {
-	if (array[0].length > array[1].length && array[0].length > array[2].length && array[0].length > array[3]) {
-		console.log("The longest phrase is " + array[0])
+function longestString(array) {
+	var stringSize = 0;
+	var biggestString = ' ';
+	for (var i = 0; i < array.length; i++){
+		if (array[i].length > stringSize){
+			biggestString = array[i];
+		}
 	}
+	return biggestString;
 }
+//driver code for test 1
+longestString("Start me up", "Beast of Burden", "Can't you hear me knocking?", "Let it bleed")
