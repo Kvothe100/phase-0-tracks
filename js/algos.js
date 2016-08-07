@@ -18,12 +18,12 @@ function longestString(array) {
 }
 //driver code for test 1
 var newArray = ["Start me up", "Beast of Burden", "Can't you hear me knocking?"];
-var phrase = longestString(newArray)
-console.log(phrase)
+var phrase = longestString(newArray);
+console.log(phrase);
 //test two
-var array2 = ["long", "longer", "lonnnnggest"]
-var phrase2 = longestString(array2)
-console.log(phrase2)
+var array2 = ["long", "longer", "lonnnnggest"];
+var phrase2 = longestString(array2);
+console.log(phrase2);
 
 //make a function that compares two objects key values and 
 //returns true if they are the same
@@ -69,3 +69,9 @@ function wordGen(numb, numb2){
 }
 // testing
 console.log(wordGen(4,(Math.floor(Math.random()* 10)+1)));
+// I couldn't get the word to only be up to 10 letters long. So I settled for this
+//after some failed attempts to get it right
+var bigArray = wordGen(4,(Math.floor(Math.random()* 10)+1));
+console.log(bigArray);
+var phrase3 = longestString(bigArray);
+console.log(phrase3);
