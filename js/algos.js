@@ -45,3 +45,10 @@ function equal(person, person2){
 }
 console.log(equal(person, person2));
 console.log(equal(person,person3));
+
+// create a function that takes an integer and returns an array of that integer
+// make the function scramble up and generate a random word
+// I'll to make an array that is empty, make a variable equal to the alphabet
+//use .math.floor and .random (I had to google this pretty hard)
+//Make the words be between 1 and 10 letters long
+//
