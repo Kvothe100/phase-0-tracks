@@ -20,5 +20,9 @@ price = gets.chomp
 #using keys
 
 decor = {
-		:
+		:client_name => name;
+		:client_age => age;
+		:Client_children => children;
+		:decor_theme => theme;
+		:price_range => price;
 }
