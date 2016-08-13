@@ -20,7 +20,21 @@ end
 
 p change_letters
 p letters
+# the delete_if method will change the array based on the desired condition
+#also I will be using the new change_letters array for these next two methods
+change_letters.delete_if {|x| x >= "e"}
+p change_letters
 
+change_letters.reject! {|x| x <= "b"}
+p change_letters
+
+letters.select {|x| x > "B"}
+p letters
+
+letters.include?("B")
+
+
+############
 dogs = {
 	"Fido" => 4,
 	"Bender" => 6,
