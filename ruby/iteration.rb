@@ -46,3 +46,14 @@ dogs = {
 dogs.each do |name, age|
 	puts "The name of the dog is #{name} and the age of the dog is #{age}."
 end
+
+dogs.delete_if {|name, age| age < 4}
+p dogs
+
+dogs.select! {|name, age| age > 4}
+p dogs
+
+dogs.keep_if {|name, age| age > 4}
+p dogs
+#this will return false because "dog" is not a name in the hash
+dogs.has_key?("dog")
