@@ -1,17 +1,16 @@
-new_name=[]
-loop do
-puts "What is your name? Type 'exit' if done creating names."
-	spyname = gets.chomp
-	new_name.push(spyname)
-	break if spyname=='exit'
-	p spyname.tr("aeiouAEIOU","uaeioUAEIO").reverse
-	new_name.push(spyname.tr("aeiouAEIOU","uaeioUAEIO").reverse)
-end
-#Alter user input to create a spyname.
-#I had trouble figuring out a way to swap both the vowels and consonants at the same time. 
-#So I just did the vowels and used .reverse to create a second alteration
-new_name.each do |name|
-	puts "#{a} is really #{b}!"
-end
+#create an empty hash
+#The real name and alias name will be stored there
 
+#user input to get the name
+
+#split the name into two parts: a first and last name.
+#Swap them
+
+#split the letters in both names to be manipulated.
+
+#store the before and after name in the empty has
+
+#use the key and value to print back the data for all of the inputs
+#store it with a sort of |name, alias| block
+#"#{alias} is really #{name}"
 
