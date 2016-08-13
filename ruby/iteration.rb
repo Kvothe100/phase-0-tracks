@@ -21,3 +21,14 @@ end
 p change_letters
 p letters
 
+dogs = {
+	"Fido" => 4,
+	"Bender" => 6,
+	"Maddie" => 12,
+	"Mariah" => 20,
+	"Bowzer" =>1
+}
+
+dogs.each do |name, age|
+	puts "The name of the dog is #{name} and the age of the dog is #{age}."
+end
