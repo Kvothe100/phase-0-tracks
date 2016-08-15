@@ -1,5 +1,5 @@
 #create an empty hash
-alias_name = {}
+
 #The real name and alias name will be stored there
 
 #user input to get the name
@@ -18,3 +18,21 @@ alias_name = {}
 #store it with a sort of |name, alias| block
 #"#{alias} is really #{name}"
 
+#this is my second time doing this so I really wanted to make the
+#most condensed code as possible. I did my best to do that
+
+spyname_hash = {}
+
+loop do
+puts "What is your name? Type 'quit' when finished."
+name = gets.chomp
+break if name == 'quit'
+
+p name.tr("aeiouAEIOU", "uaeioUAEIO").split(' ').reverse!.join(' ')
+
+new_name = name.tr("aeiouAEIOU", "uaeioUAEIO").split(' ').reverse!.join(' ')
+spyname_hash[name] = new_name
+end
+spyname_hash.each do |name, spy|
+	puts "#{spy} is really #{name}"
+end
