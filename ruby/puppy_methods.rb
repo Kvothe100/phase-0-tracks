@@ -49,3 +49,14 @@ end
 goon=Hockey.new
 goon.goals(78)
 goon.teeth
+
+players=[]
+
+50.times do
+  players<< Hockey.new
+end
+
+players.each do |puck|
+  puck.teeth
+  puck.goals(rand 1..50)
+end
