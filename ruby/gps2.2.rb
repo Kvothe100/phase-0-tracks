@@ -1,122 +1,84 @@
-# Create a new list
-# Add an item with a quantity to the list
-# Remove an item from the list
-# Update quantities for items in your list
-# Print the list (Consider how to make it look nice!)
-
-# ==================================
-# h = {"a" => 1}
-
-# h["a"] = 4
-
-# Method to create a list 
-
-# input: "some item
-# output: {sdlfkjsdflkjdlkf: 2, asldkfjdlkjfdk: 4}
-
-# def create_thing(string)
-# end
-
-# p creat_thing("as;ldkfjsdlkfjdlsifjd")
-
-
-
-
+# Method to create a list
 # input: string of items separated by spaces (example: "carrots apples cereal pizza")
-  
-# steps:
-#initalize a grocery_list hash
-#split string into an array and save that array to a variable ex. ["carrots", "apples"...] #("carrots apples").split(" ") 
-#take that array and iterate over it using each
-  #make each elament array a key in the grocery=hash   
+# steps: 
+    # make method that takes string as an argument
+    # create empty hash 
+    # split the string given
+    # push split items into hash 
+    
   # set default quantity
-  # for ex: grocery_list["item"] = 1 
-# print the list to the console [can you use one of your other methods here?]
+  # print the list to the console [can you use one of your other methods here?]
+# output: [what data type goes here, array or hash?]
 
-# output: hash
-def grocery_list(items)
-	#create an empty hash
-  list = Hash.new
-  array = items.split(' ')
-	array.each do |item|
-  	list[item.to_sym] = 1
-  	end
- 
-  p(list)
- 
-  list
+# Method to add an item to a list
+# input:quanitity,  string of items, hash 
+# steps:With split method turn string to array, split the array into individual items. 
+# output: hash with new item listed 
+
+# Method to remove an item from the list
+# input: string, item that they want to be removed
+# steps: use .delete command on the string given. Search hash delete item if it's there.
+# output: The hash with updated value. 
+
+# Method to update the quantity of an item
+# input: new_quantity 
+# steps: take old quanitity and change it with new quanitity 
+# output: updated quantity 
+
+# Method to print a list and make it look pretty
+# input: calling each item in hash with hash.each 
+# steps: will itteriate through each item 
+# output: using #{} tell user what they have and how many they have of each item on list. 
+
+def create_list(user_input) 
+  grocery_list = Hash.new  
+  array = user_input.split(" ") 
+  array.each do |item|  
+    grocery_list[item] = 1  
+end 
+  grocery_list
 end
 
 
 
-def add_item(item, quantity, list)
-
-	if list[item.to_sym] 
-	
-		list[item.to_sym] += quantity
-
-	else
-		
-		list[item.to_sym] = quantity
-	end
-
-	list
-end
-#make a method to remove an item from the list
-#use the delete_if method
-def remove_item(item, list)
-	list.delete_if {|list_item| list_item == item.to_sym}
-	#print the output
-	list
-end
+  
 
 
-#update the list with a new item
-#check to make sure it already exists
+shopping_cart = create_list("chicken celery breadcrumbs")
 
-def update(item, quantity, list)
-	if list.include? item.to_sym
-		list[item.to_sym] = quantity
-	else 
-		add_item(item, quantity, list)
-	end
-	list
-end
 
-#make a method that prints the updated list
-def print(list)
+def add_item(item, quantity, grocery_list)
+ if grocery_list[item]
+   grocery_list[item] += quantity 
+else 
+  grocery_list[item] = quantity 
+ end 
+  grocery_list 
+end 
 
-	string = "Here is my shopping list: \n"
-	list.each do |item, quantity|
-		string = string + "#{item}: #{quantity} \n"
-	end
-	puts string
+p add_item("carrot", 4, shopping_cart)
+
+def remove (item, grocery_list) 
+  grocery_list.delete(item)
+  grocery_list 
+end 
+
+p remove('carrot', shopping_cart)
+
+def update(item,new_quantity, grocery_list)
+  grocery_list[item] = new_quantity 
+  grocery_list 
+end 
+
+p update("chicken", 5, shopping_cart)
+
+def print(shopping_cart)
+  shopping_cart.each do |item, quantity|
+    puts "Here is your item #{item} : #{quantity}"
+  end
+  p shopping_cart
 end
 
+p print(shopping_cart)
 
-updated_list = grocery_list("carrots oranges juice cheeses")
-p add_item("dog treats", 4, updated_list)
-p remove_item("juice", updated_list)
-p update("carrots", 7, updated_list)
-print(updated_list)
-
-#I went back and reworked pretty much the entire thing. My pair and I were headed 
-#in the right direction when I had to go to work. I only reworked it because it
-#made more sense to me when I was working on my own.
-
-#pseudocoding: I found the given pseudocode a bit confusing. So did my pair.
-#We got rid of pretty much all of it and our guide helped us add some hints in.
-
-#Hashes were good for this challenge because of the key/value aspect of a hash
-#Meaning we could easily apply a quantity to our items
-#array were then easy create from our hash
-
-#A method returns whatever you ask it to with your argument. As long as it works
-
-#What you pass into methods as arguments depends on what you are trying to 
-#accomplish with the method. It could be: strings, integers, booleans, etc.
-
-#We demonstrated how to pass info between methods with our challenge.
-#You call the desired method in your current method. Passing the info along
-
-#I think this challenge was good for me. It helped strengthen my hash/array knowledge
+  
