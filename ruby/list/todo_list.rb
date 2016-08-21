@@ -1,7 +1,8 @@
 class Todolist
-	attr_accessor : arr
+	attr_accessor :arr
 	
 	def initialize(arr)
+		puts "Starting list..."
 		@arr = arr
 	end
 
@@ -10,11 +11,13 @@ class Todolist
 	end
 
 	def add_item(item)
-		@arr.push(item)
+		@arr << item
+		@arr
 	end
 
 	def delete_item(item)
 		@arr.delete(item)
+		@arr
 	end
 	
 	def get_item(index)
