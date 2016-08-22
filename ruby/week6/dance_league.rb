@@ -23,4 +23,11 @@ class Dancer
 		@card
 	end
 
+	def begin_next_dance
+		p "Now dancing with #{@card[0]}."
+		@card.delete_at(0)
+		@card
+	end
+
+
 end
