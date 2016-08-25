@@ -26,4 +26,4 @@ happy=Happy.new
 happy.shouting("We won")
 
 angry=Angry.new
-angry.shouting("we lost.")
+angry.shouting("we lost")
