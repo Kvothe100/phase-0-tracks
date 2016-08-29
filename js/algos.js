@@ -45,3 +45,33 @@ function equal(person, person2){
 }
 console.log(equal(person, person2));
 console.log(equal(person,person3));
+
+// create a function that takes an integer and returns an array of that integer
+// make the function scramble up and generate a random word
+// I'll to make an array that is empty, make a variable equal to the alphabet
+//use .math.floor and .random (I had to google this pretty hard)
+//Make the words be between 1 and 10 letters long
+
+function wordGen(numb, numb2){
+	//create a blank array to be pushed to later in function
+	var array =[];
+	//make the words be seperated by ""
+	var scramble = "";
+	//make the alphabet including capital letters
+	var alphabet = "abcdefghijklmnopqrstuvqxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	for (var x = 0; x < numb; x++)
+	{
+			for (var i= 0; i < numb2; i++)
+			scramble += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+			array.push(scramble);
+	}
+	return array;
+}
+// testing
+console.log(wordGen(4,(Math.floor(Math.random()* 10)+1)));
+// I couldn't get the word to only be up to 10 letters long. So I settled for this
+//after some failed attempts to get it right
+var bigArray = wordGen(4,(Math.floor(Math.random()* 10)+1));
+console.log(bigArray);
+var phrase3 = longestString(bigArray);
+console.log(phrase3);
