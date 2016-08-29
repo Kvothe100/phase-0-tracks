@@ -24,3 +24,24 @@ console.log(phrase);
 var array2 = ["long", "longer", "lonnnnggest"];
 var phrase2 = longestString(array2);
 console.log(phrase2);
+
+//make a function that compares two objects key values and 
+//returns true if they are the same
+//I'll need to create two objects with the same key values
+var person = {name: "Tom", age : 29};
+var person2 = {name: "Billy", age: 29};
+// I should make third person to make sure it would return false if it needed to
+var person3 = {name: "James", age: 30};
+//now to set up my function
+//it will check to see if the key values are equivilent or not
+//then return true or false
+function equal(person, person2){
+	for (var val in person) {
+		if(person2[val] == person[val]){
+			return true;
+		}
+	}
+	return false;
+}
+console.log(equal(person, person2));
+console.log(equal(person,person3));
