@@ -16,3 +16,11 @@ function longestString(array) {
 	}
 	return biggestString;
 }
+
+var newArray = ["Start me up", "Beast of Burden", "Can't you hear me knocking?"];
+var phrase = longestString(newArray);
+console.log(phrase);
+//test two
+var array2 = ["long", "longer", "lonnnnggest"];
+var phrase2 = longestString(array2);
+console.log(phrase2);
