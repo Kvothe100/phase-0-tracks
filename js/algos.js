@@ -6,3 +6,13 @@
 //the others
 
 //return the longest string
+function longestString(array) {
+	var stringSize = 0;
+	var biggestString = ' ';
+	for (var i = 0; i < array.length; i++){
+		if (array[i].length > stringSize){
+			biggestString = array[i];
+		}
+	}
+	return biggestString;
+}
